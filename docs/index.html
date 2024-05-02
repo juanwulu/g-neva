@@ -26,7 +26,7 @@
 
 
     <title>GNeVA</title>
-    <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+    <link rel="icon" type="image/x-icon" href="static/images/icon_36_36.png">
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
     <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -50,7 +50,7 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-1 publication-title">
+                        <h1 class="title is-1 publication-title" font-size="24px">
                             Towards Generalizable and Interpretable Motion Prediction: A Deep Variational Bayes Approach
                         </h1>
                         <div class="is-size-5 publication-authors">
@@ -163,65 +163,83 @@
     <!-- End teaser video -->
 
     <!-- Paper abstract -->
-    <!-- <section class="section hero is-light">
+    <section class="section hero is-light">
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
                     <h2 class="title is-3">Abstract</h2>
+                    <img src="static/images/framework.png" , alt="framework" />
+                    <figcaption>Overview of the GNeVA Framework</figcaption><br>
                     <div class="content has-text-justified">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante
-                            aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec
-                            accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus
-                            euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat
-                            ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo.
-                            Pellentesque auctor leo vitae sagittis suscipit.
+                            Estimating the potential behavior of the surrounding human-driven vehicles is crucial for
+                            the safety of autonomous vehicles in a mixed traffic flow. Recent state-of-the-art achieved
+                            accurate prediction using deep neural networks. However, these end-to-end models are usually
+                            black boxes with weak interpretability and generalizability. This paper proposes the
+                            Goal-based Neural Variational Agent (GNeVA), an interpretable generative model for motion
+                            prediction with robust generalizability to out-of-distribution cases. For interpretability,
+                            the model achieves target-driven motion prediction by estimating the spatial distribution of
+                            long-term destinations with a variational mixture of Gaussians. We identify a causal
+                            structure among maps and agents' histories and derive a variational posterior to enhance
+                            generalizability. Experiments on motion prediction datasets validate that the fitted model
+                            can be interpretable and generalizable and can achieve comparable performance to
+                            state-of-the-art results.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- End paper abstract -->
 
 
     <!-- Image carousel -->
-    <!-- <section class="hero is-small">
+    <section class="hero is-small">
         <div class="hero-body">
             <div class="container">
+                <h2 class="title is-3">Visualizing Posterior Predictive Distribution of Goals</h2>
                 <div id="results-carousel" class="carousel results-carousel">
                     <div class="item">
-                        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
                         <h2 class="subtitle has-text-centered">
-                            First image description.
+                            In-distribution case from INTERACTION dataset (ZS0)
                         </h2>
+                        <img src="static/images/qualitative/DR_CHN_Merging_ZS0.png" alt="ZS0" />
                     </div>
                     <div class="item">
-                        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
                         <h2 class="subtitle has-text-centered">
-                            Second image description.
+                            Out-of-Distribution case from INTERACTION dataset (TR0)
                         </h2>
+                        <img src="static/images/qualitative/DR_Merging_TR0.png" alt="TR0" />
                     </div>
                     <div class="item">
-                        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
                         <h2 class="subtitle has-text-centered">
-                            Third image description.
+                            In-distribution case from INTERACTION dataset (MA)
                         </h2>
+                        <img src="static/images/qualitative/DR_USA_Intersection_MA.png" alt="MA" />
                     </div>
                     <div class="item">
-                        <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
                         <h2 class="subtitle has-text-centered">
-                            Fourth image description.
+                            Out-of-Distribution case from INTERACTION dataset (CM)
                         </h2>
+                        <img src="static/images/qualitative/DR_Intersection_CM.png" alt="CM" />
+                    </div>
+                    <div class="item">
+                        <h2 class="subtitle has-text-centered">
+                            In-distribution case from INTERACTION dataset (SR)
+                        </h2>
+                        <img src="static/images/qualitative/DR_USA_Roundabout_SR.png" alt="SR" />
+                    </div>
+                    <div class="item">
+                        <h2 class="subtitle has-text-centered">
+                            Out-of-Distribution case from INTERACTION dataset (RW)
+                        </h2>
+                        <img src="static/images/qualitative/DR_Roundabout_RW.png" alt="RW" />
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- End image carousel -->
-
-
-
 
     <!-- Youtube video -->
     <!-- <section class="hero is-small is-light">
@@ -270,27 +288,42 @@
     <!-- End video carousel -->
 
     <!-- Paper poster -->
-    <!-- <section class="hero is-small is-light">
+    <section class="hero is-small is-light">
         <div class="hero-body">
             <div class="container">
                 <h2 class="title">Poster</h2>
-
-                <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+                <iframe src="static/pdf/AISTATS_2044_Poster.pdf" width="100%" height="550">
                 </iframe>
 
             </div>
         </div>
-    </section> -->
+    </section>
     <!--End paper poster -->
 
 
     <!--BibTex citation -->
-    <!-- <section class="section" id="BibTeX">
+    <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
             <h2 class="title">BibTeX</h2>
-            <pre><code>BibTex Code Here</code></pre>
+            <pre><code>
+@InProceedings{pmlr-v238-lu24a,
+  title = 	 { Towards Generalizable and Interpretable Motion Prediction: A Deep Variational Bayes Approach },
+  author =       {Lu, Juanwu and Zhan, Wei and Tomizuka, Masayoshi and Hu, Yeping},
+  booktitle = 	 {Proceedings of The 27th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {4717--4725},
+  year = 	 {2024},
+  editor = 	 {Dasgupta, Sanjoy and Mandt, Stephan and Li, Yingzhen},
+  volume = 	 {238},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {02--04 May},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v238/lu24a/lu24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v238/lu24a.html},
+  abstract = 	 { Estimating the potential behavior of the surrounding human-driven vehicles is crucial for the safety of autonomous vehicles in a mixed traffic flow. Recent state-of-the-art achieved accurate prediction using deep neural networks. However, these end-to-end models are usually black boxes with weak interpretability and generalizability. This paper proposes the Goal-based Neural Variational Agent (GNeVA), an interpretable generative model for motion prediction with robust generalizability to out-of-distribution cases. For interpretability, the model achieves target-driven motion prediction by estimating the spatial distribution of long-term destinations with a variational mixture of Gaussians. We identify a causal structure among maps and agents’ histories and derive a variational posterior to enhance generalizability. Experiments on motion prediction datasets validate that the fitted model can be interpretable and generalizable and can achieve comparable performance to state-of-the-art results. }
+}
+    </code></pre>
         </div>
-    </section> -->
+    </section>
     <!--End BibTex citation -->
 
 
